@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User authentication</title>
+	</head>
+	<body>
+		<h1>User Authentication</h1>
+		<form action="{% url 'access' %}" method="get">
+			<input type="text" name="firstname" size="40" />First name
+			<br />
+			<br />
+			<input type="text" name="lastname" size = "40" />Last Name
+			<br />
+			<br />
+			<input type="submit" value="Submit Form" />
+		</form> 
+			
+	</body>
+</html>

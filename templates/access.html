@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<a href="{% url 'home' %}">Back to Home</a>
+		<h1>{{ data }}</h1>
+		<span>{{ status }}
+		{% if code %}
+			<p>{{ code }}</p>
+		{% endif %}
+	</body>
+</html>
