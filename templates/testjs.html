@@ -5,12 +5,25 @@
     <script>
       // This will run on its own as the page is opened or navigated to.
       window.alert('This is a test');
+      function returnValue() {
+        /* This doesn't actually return anything. Would liek to be able to
+        return a value and allow this to be the value of an element in the body
+        */
+        // Are there doc strings in JS?
+        // get teh value from the user and writes it to the screen.
+        var response = window.prompt("Enter some info here", "Default");
+        // The question is where is this element going to be written?
+        /* Test: It overwrites the buttons i previously had. Would need to get
+         the document text.
+         */
+        document.write("<p>Here is you reponse: ''" + response + "'' !!!");
+      }
     </script>
   </head>
   <body>
     <br />
     <input type="button" onclick="alert('This is a test')" value="Button!" />
     <input type="button" value="Test two"
-      onclick="window.prompt('Enter some info here','default')" />
+      onclick="returnValue()" />
   </body>
 </html>
